@@ -5,22 +5,18 @@ import { FaCheckCircle } from "react-icons/fa";
 const AboutUs = () => (
   <section
     id="aboutus"
-    className="py-16 px-20 mx-auto grid md:grid-cols-2 gap-10 items-center bg-[#F0FDF4]"
+    className="py-16 px-6 md:px-20 mx-auto grid md:grid-cols-2 gap-10 items-center bg-[#F0FDF4]"
   >
-    {/* Image Section */}
-    <div>
+    <div className="flex justify-center md:justify-start">
       <img
         src={aboutImg}
         alt="About Us"
-        className="rounded-2xl shadow-lg w-full max-w-[592px] h-auto object-cover ml-6"
+        className="rounded-2xl shadow-lg w-full max-w-[500px] h-auto object-cover"
       />
     </div>
 
-    {/* Text Section */}
-    <div className="max-w-[592px]">
-      <h2 className="text-3xl font-semibold mb-4 w-[589px]">
-        About Greens & Acres
-      </h2>
+    <div className="max-w-xl">
+      <h2 className="text-3xl font-semibold mb-4">About Greens & Acres</h2>
       <p className="mb-6">
         We are a real estate development company focused on creating modern,
         secure, and sustainable communities. We specialize in selling land
@@ -28,7 +24,6 @@ const AboutUs = () => (
         facilities are provided.
       </p>
 
-      {/* Check Icon List */}
       <ul className="space-y-3">
         {[
           "Modern and sustainable communities",
@@ -36,7 +31,7 @@ const AboutUs = () => (
           "Professional estate management",
         ].map((item, idx) => (
           <li key={idx} className="flex items-center gap-3">
-            <FaCheckCircle className="text-[#228B22] text-lg" />
+            <FaCheckCircle className="text-[#228B22] text-lg flex-shrink-0" />
             <span>{item}</span>
           </li>
         ))}

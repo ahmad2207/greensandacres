@@ -1,51 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false); // close mobile menu
     }
   };
 
   return (
-    <nav className="bg-white shadow px-6 py-4 flex justify-between items-center">
+    <nav className="bg-white shadow px-6 py-4 flex justify-between items-center sticky top-0 z-50">
       <div className="flex items-center gap-3">
-        <img src={logo} alt="Logo" className="h-16 w-auto pl-[60px]" />
+        <img src={logo} alt="Logo" className="h-12 w-auto" />
       </div>
-      <ul className="flex gap-6 text-gray-700 font-medium pr-[60px]">
+      <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
         <li
-          className="hover:text-[#228B22] cursor-pointer"
           onClick={() => handleScroll("home")}
+          className="hover:text-[#228B22] cursor-pointer"
         >
           Home
         </li>
         <li
-          className="hover:text-[#228B22] cursor-pointer"
           onClick={() => handleScroll("whychooseus")}
+          className="hover:text-[#228B22] cursor-pointer"
         >
           Why Choose Us
         </li>
         <li
-          className="hover:text-[#228B22] cursor-pointer"
           onClick={() => handleScroll("aboutus")}
+          className="hover:text-[#228B22] cursor-pointer"
         >
           About Us
         </li>
         <li
-          className="hover:text-[#228B22] cursor-pointer"
           onClick={() => handleScroll("corevalues")}
+          className="hover:text-[#228B22] cursor-pointer"
         >
           Core Values
         </li>
       </ul>
+
+      {/* CTA */}
       <button
         onClick={() => handleScroll("schedulevisit")}
-        className="bg-[#228B22] text-white text-sm py-2 px-6 rounded mr-4"
+        className="hidden md:block bg-[#228B22] text-white text-sm py-2 px-6 rounded"
       >
         Schedule a Visit
       </button>
+
+      <div className="md:hidden">
+        <button onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+        </button>
+      </div>
+      {menuOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-6 space-y-4 md:hidden z-40">
+          <button
+            onClick={() => handleScroll("home")}
+            className="hover:text-[#228B22]"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => handleScroll("whychooseus")}
+            className="hover:text-[#228B22]"
+          >
+            Why Choose Us
+          </button>
+          <button
+            onClick={() => handleScroll("aboutus")}
+            className="hover:text-[#228B22]"
+          >
+            About Us
+          </button>
+          <button
+            onClick={() => handleScroll("corevalues")}
+            className="hover:text-[#228B22]"
+          >
+            Core Values
+          </button>
+          <button
+            onClick={() => handleScroll("schedulevisit")}
+            className="bg-[#228B22] text-white text-sm py-2 px-6 rounded"
+          >
+            Schedule a Visit
+          </button>
+        </div>
+      )}
     </nav>
   );
 };
