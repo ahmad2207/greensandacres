@@ -29,7 +29,7 @@ const Footer = () => (
       {/* Contact Info */}
       <div>
         <h3 className="text-lg font-semibold text-white mb-4">Contact Info</h3>
-        <p className="mb-2">info@greensandcres.com</p>
+        <p className="mb-2">info@greensandacres.com</p>
         <p>(+234) 224 242 422</p>
       </div>
 
