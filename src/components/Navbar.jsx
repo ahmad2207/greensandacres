@@ -48,9 +48,9 @@ const Navbar = () => {
       {/* CTA */}
       <button
         onClick={() => handleScroll("schedulevisit")}
-        className="hidden md:block bg-[#228B22] text-white text-sm py-2 px-6 rounded"
+        className="hidden md:block bg-[#556B2F] text-white text-sm py-2 px-6 rounded"
       >
-        Schedule a Visit
+        View our Projects
       </button>
 
       <div className="md:hidden">

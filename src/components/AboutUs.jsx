@@ -31,7 +31,7 @@ const AboutUs = () => (
           "Professional estate management",
         ].map((item, idx) => (
           <li key={idx} className="flex items-center gap-3">
-            <FaCheckCircle className="text-[#228B22] text-lg flex-shrink-0" />
+            <FaCheckCircle className="text-[#556B2F] text-lg flex-shrink-0" />
             <span>{item}</span>
           </li>
         ))}

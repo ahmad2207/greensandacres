@@ -3,7 +3,7 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => (
-  <footer className="bg-[#228B22] text-gray-100 pt-16 pb-8 px-6">
+  <footer className="bg-[#556B2F] text-gray-100 pt-16 pb-8 px-6">
     <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
       <div>
         <h2 className="text-3xl pb-4 text-white">Greens & Acres</h2>
@@ -30,10 +30,8 @@ const Footer = () => (
       <div>
         <h3 className="text-lg font-semibold text-white mb-4">Contact Info</h3>
         <p className="mb-2">info@greensandacres.com</p>
-        <p>(+234) 224 242 422</p>
+        <p>(+234) 808 687 2610</p>
       </div>
-
-      {/* Follow Us */}
       <div>
         <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
         <div className="flex gap-4">

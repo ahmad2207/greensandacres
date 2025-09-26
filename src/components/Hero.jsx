@@ -29,7 +29,7 @@ const Hero = () => (
           long-term value.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start">
-          <button className="bg-[#228B22] text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-900">
+          <button className="bg-[#556B2F] text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-500">
             Explore Our Lands
           </button>
           <button className="bg-transparent border border-white text-white px-6 py-3 rounded-lg shadow-md hover:bg-white hover:text-[#228B22]">
