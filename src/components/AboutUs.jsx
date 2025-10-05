@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../assets/images/about-us.png";
+import aboutImg from "../assets/images/project5.png";
 import { FaCheckCircle } from "react-icons/fa";
 
 const AboutUs = () => (
@@ -16,7 +16,7 @@ const AboutUs = () => (
     </div>
 
     <div className="max-w-xl">
-      <h2 className="text-3xl font-semibold mb-4">About Greens & Acres</h2>
+      {/* <h2 className="text-3xl font-semibold mb-4">About Greens & Acres</h2> */}
       <p className="mb-6">
         We are a real estate development company focused on creating modern,
         secure, and sustainable communities. We specialize in selling land

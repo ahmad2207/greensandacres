@@ -2,9 +2,9 @@ import React from "react";
 import { FaLightbulb, FaBalanceScale, FaLeaf } from "react-icons/fa";
 
 const CoreValues = () => (
-  <section id="corevalues" className="py-16 px-6 text-center">
-    <p className="text-m font-bold mb-6 text-[#556B2F]">Our Core Values</p>
-    <h2 className="text-3xl mb-10 font-bold">The principles that guide everything we do</h2>
+  <section id="corevalues" className="py-16 px-6 text-center bg-[#556B2F]">
+    <p className="text-m font-bold mb-6 text-white">Our Core Values</p>
+    <h2 className="text-3xl mb-10 font-bold text-white">The principles that guide everything we do</h2>
     <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
       <div className="p-6 bg-white rounded-2xl shadow">
         <FaLightbulb className="text-[#556B2F] text-4xl mx-auto mb-4" />

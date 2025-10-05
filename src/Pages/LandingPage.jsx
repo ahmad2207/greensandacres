@@ -13,8 +13,8 @@ const LandingPage = () => {
       <Navbar />
       <Hero />
       <Amenities />
-      <AboutUs />
-      <CoreValues />
+      {/* <AboutUs />
+      <CoreValues /> */}
       <ScheduleVisit />
       <Footer />
       </div>
