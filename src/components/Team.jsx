@@ -1,29 +1,25 @@
 import React from "react";
-import team1 from "../assets/images/team-1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
+import team1 from "../assets/images/md.png";
+import testimonial2 from "../assets/images/team-1.png";
+import testimonial3 from "../assets/images/team3.png";
 
 const teamMembers = [
   {
-    name: "Dr Taiwo Q Yusuff",
+    name: "Surv. Oyesiji Yisau Oyekola",
     title: "Managing Director",
     image: team1,
-    description:
-      "Taiwo leads policy strategy and stakeholder engagement, bringing deep expertise in development systems.",
+    
   },
   {
-    name: "David Sheun",
-    title: "Research & Strategy",
+    name: "Dr Taiwo Q Yusuff",
+    title: "Non-Executive Director",
     image: testimonial2,
-    description:
-      "David spearheads research, monitoring trends and providing insights for inclusive systems innovation.",
   },
   {
-    name: "Tolu Adeyemi",
-    title: "Community Engagement",
+    name: "Abdulmalik Ogungbenle",
+    title: "Non-Executive Director",
     image: testimonial3,
-    description:
-      "Tolu connects with communities, facilitating grassroots collaboration and participatory approaches.",
+    
   },
 ];
 
@@ -50,7 +46,7 @@ const Team = () => {
               className="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
             >
               {/* Image */}
-              <div className="w-full h-64 overflow-hidden">
+              <div className="w-full h-64 ">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -59,7 +55,7 @@ const Team = () => {
               </div>
 
               {/* Text Content */}
-              <div className="p-6 flex-1 flex flex-col">
+              <div className="p-6 flex-1 flex flex-col text-center">
                 <h4 className="text-xl font-bold text-gray-900 mb-1">
                   {member.name}
                 </h4>
